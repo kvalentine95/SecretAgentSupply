@@ -66,6 +66,10 @@ html {
   justify-content: space-between;
 }
 
+.navigation .container .special {
+  display: none;
+}
+
 .navigation .container .nav {
   padding: 0.75rem;
 }
@@ -134,6 +138,76 @@ footer {
   margin-top: 4rem;
 }
 
-@media screen only and (max-width: 1024px){
-  
+@media only screen and (min-width: 470px) and (max-width: 1024px){
+  .products .image {
+    width: 47%;
+  }
+  #glassessp{
+    display: none;
+  }
+
+  .navigation .container {
+    justify-content: center;
+  }
+
+  .navigation .container .nav{
+    display: none;
+  }
+  .navigation .container .special {
+    display: inline-block;
+    padding: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main_banner{
+    height: 15rem;
+  }
+
+  .banner {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+  }
+
+  .banner h4 {
+    font-size: 0.77rem;
+  }
+
+  .navigation .container {
+    justify-content: center;
+  }
+
+  .navigation .container .nav{
+    display: none;
+  }
+  .navigation .container .special {
+    display: inline-block;
+    padding: 0.75rem;
+  }
+
+  .products .container, footer .container {
+    justify-content: center;
+  }
+
+  #watchsp, #glassessp{
+    display: none;
+  }
+
+  .products .image {
+    width: 90%;
+  }
+
+  .location, .hours {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+  .location_hours .container{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+  }
 }
